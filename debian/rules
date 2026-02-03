@@ -21,7 +21,7 @@ override_dh_auto_build:
 #	CFLAGS="-O2 -DNDEBUG" CXXFLAGS="-O2 -DNDEBUG" DEBUG_FLAGS="" LDFLAGS=""  # can be used to avoid dependency on libasan and libubsan
 #	OPENSSL_DIR=/usr
 	CC=$(CC) CXX=$(CXX) AR=$(AR) \
-	  dh_auto_build -- -f Makefile_v1 OPENSSL_DIR="$(OPENSSL_DIR)" -j1 build_only
+	  dh_auto_build -- -f Makefile_v1 OPENSSL_DIR="/usr" OPENSSL_LIB="/usr/lib/x86_64-linux-gnu" -j1 build_only
 
 override_dh_auto_test:
 # do not run any tests
