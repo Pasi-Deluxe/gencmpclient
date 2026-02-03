@@ -70,7 +70,6 @@ tar-ignore = securityUtilities*
 tar-ignore = test/recipes/80-test_cmp_http_data/Simple
 tar-ignore = 80-test_cmp_http_data
 tar-ignore = cmp-ra-component
-tar-ignore = config/EJBCA.env
 tar-ignore = creds/PPKI_Playground_*
 tar-ignore = creds/CloudflareIncECCCA-3.crt
 tar-ignore = creds/www.insta.fi.*
